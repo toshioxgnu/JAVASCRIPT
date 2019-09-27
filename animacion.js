@@ -1,12 +1,4 @@
-var gato; 
-gato = Date();
+var un = 20;
+var dos = 40;
 
-function saludar(){
-    document.write(gato);
-    console.log("Se escribio")
-}
-
-
-
-
-saludar();
+document.write(un + dos);

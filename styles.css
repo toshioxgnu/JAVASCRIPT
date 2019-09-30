@@ -3,8 +3,9 @@ body {
 }
 h1 {
   background-color: aquamarine;
+  font-style: italic;
+
 }
 
-h1{
-  font-style: italic;
-}
+/* h1{
+} */

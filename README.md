@@ -1,3 +1,3 @@
-Mini proyecto para aprender a usar Javascript. El conocimiento es PODER 
+Mini proyecto aprendiendo Bootstrap, jquery. 
 
-Agregando estilos al codigo 
+Todo junto ahora 

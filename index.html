@@ -4,44 +4,90 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Practica personal jquery</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/lib/jquery-3.4.1.js"></script>
 </head>
-<body>
+<body class="container" id="top"> 
+  <h1>Practica Personal <small class="text-muted">jquery y web dev</small></h1>
+  <hr>
 
-    <div class="container">
-        
+  <form>
+    
+    <select class="custom-select" id="inputGroupSelect01">
+      <option selected>Choose...</option>
+      <option value="1">Cotizar</option>
+      <option value="2">Agendar</option>
+      <option value="3">Cancelar</option>
+    </select>
+    
+    <br>
+    <br>
+    <br>
+    
 
-      <table class="table table-dark">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead>
-        <tbody>
-          
-        </tbody>
-      </table>  
+    <!-- Text area -->
+
+   <div style="background-color: rgb(114, 145, 247);" class="col-6">
+      <div class="row" style="margin: 20px;"> 
+     <div class="col-12" style="  margin-top: 30px; background-color: white; color: black;">
+       
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dolor quam laudantium, id reprehenderit sint molestias sit similique veritatis. Obcaecati reiciendis voluptate, ut repellat dolores recusandae vitae natus suscipit iusto!</p>
+     </div>
+   </div>
+   <div class="row" style="margin: 20px;">
+     <div class="col-12" style="background-color: white; color: black;">
+       
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dolor quam laudantium, id reprehenderit sint molestias sit similique veritatis. Obcaecati reiciendis voluptate, ut repellat dolores recusandae vitae natus suscipit iusto!</p>
+     </div>
+   </div>
+   <div class="row" style="margin: 20px;">
+     <div class="col-12" style="background-color: white; color: black;">
+
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dolor quam laudantium, id reprehenderit sint molestias sit similique veritatis. Obcaecati reiciendis voluptate, ut repellat dolores recusandae vitae natus suscipit iusto!</p>
+     </div>
+   </div>
+   <div class="row" style="margin: 20px;">
+     <div class="col-12" style="background-color: white; color: black;">
+       
+
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dolor quam laudantium, id reprehenderit sint molestias sit similique veritatis. Obcaecati reiciendis voluptate, ut repellat dolores recusandae vitae natus suscipit iusto!</p>
+     </div>
+   </div>
+   <div class="row" style="margin: 20px; ">
+     <div class="col-12" style="background-color: white; color: black; margin-bottom: 30px;">
+       
+
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dolor quam laudantium, id reprehenderit sint molestias sit similique veritatis. Obcaecati reiciendis voluptate, ut repellat dolores recusandae vitae natus suscipit iusto!</p>
+     </div>
+   </div>
+    
+
+   </div>
+    <div id="icono">
+     <a href="#top"><img class="img-responsive" src="img/play-button.svg" alt="logo"></a>
+   </div>
+
+         
+    <br>
+    <br>
+    <!-- 3 botones -->
+    <button type="button" class="btn btn-primary" onclick="captura()">Agendar</button>
+    <button type="button" class="btn btn-success">Cotizar</button>
+    <button type="button" class="btn btn-danger">Cancelar</button>
 
 
-    </div>
-<!-- "<tr><th scope="'row'">1</th><td>Mark</td><td>Otto</td><td>@mdo</td></tr>" -->
+
+
+
+
+  </form>
+  
+
+
     
 </body>
 <!-- jquery -->
-<script>
-    $(function(){   
-        var row = "<tr><th scope="'row'">1</th><td>Mark</td><td>Otto</td><td>@mdo</td></tr>";
-
-        $("dark-table")
-            .;
-
-
-    })()
-
-
+<script src="js/script.js">
 </script>
 </html>

@@ -12,7 +12,7 @@
   <h1>Practica Personal <small class="text-muted">jquery y web dev</small></h1>
   <hr>
 
-  <form>
+
     
     <select class="custom-select" id="inputGroupSelect01">
       <option selected>Choose...</option>
@@ -21,46 +21,64 @@
       <option value="3">Cancelar</option>
     </select>
     
-    <br>
-    <br>
-    <br>
+      <br>
+      <br>
+      <br>
     
 
     <!-- Text area -->
-
-   <div style="background-color: rgb(114, 145, 247);" class="col-6">
+  
+   <div style="background-color: rgb(114, 145, 247);" class="col-md-9">
       <div class="row" style="margin: 20px;"> 
-     <div class="col-12" style="  margin-top: 30px; background-color: white; color: black;">
-       
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dolor quam laudantium, id reprehenderit sint molestias sit similique veritatis. Obcaecati reiciendis voluptate, ut repellat dolores recusandae vitae natus suscipit iusto!</p>
+       <div class="col-12" style="  margin-top: 30px; background-color: white; color: black;">
+         
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dolor quam laudantium, id reprehenderit sint molestias sit similique veritatis. Obcaecati reiciendis voluptate, ut repellat dolores recusandae vitae natus suscipit iusto!</p>
+       </div>
+      </div>
+     <div class="row" style="margin: 20px;">
+       <div class="col-12" style="background-color: white; color: black;">
+         
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dolor quam laudantium, id reprehenderit sint molestias sit similique veritatis. Obcaecati reiciendis voluptate, ut repellat dolores recusandae vitae natus suscipit iusto!</p>
+       </div>
      </div>
-   </div>
-   <div class="row" style="margin: 20px;">
-     <div class="col-12" style="background-color: white; color: black;">
-       
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dolor quam laudantium, id reprehenderit sint molestias sit similique veritatis. Obcaecati reiciendis voluptate, ut repellat dolores recusandae vitae natus suscipit iusto!</p>
-     </div>
-   </div>
-   <div class="row" style="margin: 20px;">
-     <div class="col-12" style="background-color: white; color: black;">
+     <div class="row" style="margin: 20px;">
+       <div class="col-12" style="background-color: white; color: black;">
 
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dolor quam laudantium, id reprehenderit sint molestias sit similique veritatis. Obcaecati reiciendis voluptate, ut repellat dolores recusandae vitae natus suscipit iusto!</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dolor quam laudantium, id reprehenderit sint molestias sit similique veritatis. Obcaecati reiciendis voluptate, ut repellat dolores recusandae vitae natus suscipit iusto!</p>
+       </div>
      </div>
-   </div>
-   <div class="row" style="margin: 20px;">
-     <div class="col-12" style="background-color: white; color: black;">
-       
+     <div class="row" style="margin: 20px;">
+       <div class="col-12" style="background-color: white; color: black;">
+         
 
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dolor quam laudantium, id reprehenderit sint molestias sit similique veritatis. Obcaecati reiciendis voluptate, ut repellat dolores recusandae vitae natus suscipit iusto!</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dolor quam laudantium, id reprehenderit sint molestias sit similique veritatis. Obcaecati reiciendis voluptate, ut repellat dolores recusandae vitae natus suscipit iusto!</p>
+       </div>
      </div>
-   </div>
-   <div class="row" style="margin: 20px; ">
-     <div class="col-12" style="background-color: white; color: black; margin-bottom: 30px;">
-       
+     <div class="row" style="margin: 20px; ">
+       <div class="col-12" style="background-color: white; color: black; margin-bottom: 30px;">
+         
 
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dolor quam laudantium, id reprehenderit sint molestias sit similique veritatis. Obcaecati reiciendis voluptate, ut repellat dolores recusandae vitae natus suscipit iusto!</p>
-     </div>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dolor quam laudantium, id reprehenderit sint molestias sit similique veritatis. Obcaecati reiciendis voluptate, ut repellat dolores recusandae vitae natus suscipit iusto!</p>
+       </div>
+      </div>
    </div>
+
+    <div style="background-color: rgb(114, 145, 247);" class="col-md-3">
+
+      <div class="body"><h3>Productos</h3></div>
+      <div class="body">
+        <div class="card" style="width: relative;">
+          <img src="img/up.jpeg" class="card-img-top img-responsive">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div> 
+
+      </div>
+    </div>
+
     
 
    </div>
@@ -68,12 +86,16 @@
      <a href="#top"><img class="img-responsive" src="img/play-button.svg" alt="logo"></a>
    </div>
 
-         
+  <!--  <div class="popup" onclick="myFunction()">Click me!
+  
+</div>
+ -->
+         <span class="popuptext" id="myPopup">Popup text...</span>
     <br>
     <br>
     <!-- 3 botones -->
     <button type="button" class="btn btn-primary" onclick="captura()">Agendar</button>
-    <button type="button" class="btn btn-success">Cotizar</button>
+    <button type="button" class="btn btn-success" onclick="popUp()">Cotizar</button>
     <button type="button" class="btn btn-danger">Cancelar</button>
 
 
@@ -81,7 +103,6 @@
 
 
 
-  </form>
   
 
 

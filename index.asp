@@ -6,19 +6,13 @@
     <title>Practica personal jquery</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- <script src="js/lib/jquery-3.4.1.js"></script> -->
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.js"> </script>
-    <script src="https://ajax.aspnetcdn.com/ajax/3.5/MicrosoftAjax.js"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/4.0/1/MicrosoftAjaxCore.js"></script>
-      
-
-
+    <script src="js/lib/jquery-3.4.1.js"></script>
 </head>
-<body class="container bg-dark text-white">
+<body class="container" id="top"> 
   <h1>Practica Personal <small class="text-muted">jquery y web dev</small></h1>
   <hr>
 
-  <form>
+
     
     <select class="custom-select" id="inputGroupSelect01">
       <option selected>Choose...</option>
@@ -27,73 +21,69 @@
       <option value="3">Cancelar</option>
     </select>
     
-    <br>
-    <br>
-    <br>
+      <br>
+      <br>
+      <br>
     
 
     <!-- Text area -->
+  
+   <div style="background-color: #7291f7;" class="col-md-9">
+      <div class="row " style="margin: 20px;"> 
+         <div class="col-12" style="  margin-top: 30px; background-color: white; color: black; margin-bottom: 10px;">
+           
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dolor quam laudantium, id reprehenderit sint molestias sit similique veritatis. Obcaecati reiciendis voluptate, ut repellat dolores recusandae vitae natus suscipit iusto!</p>
+         </div>
+      </div>
+   </div>
 
-    <textarea name="txt area" id="" cols="30" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus repudiandae, eaque tempore, totam maiores placeat. Sed dolor praesentium, cupiditate cumque aspernatur eius sit ad voluptate vero omnis neque, vel sapiente?</textarea>
+    <div style="background-color: #7291f7;" class="col-md-3">
 
-    <br>
-    <br>
-    <button type="button" class="btn btn-warning" onclick="captura()">Tabla ASP</button>
-     <br> 
-    <hr>
-
-    <div>
-      <table class="table" id="firstTable">
-  <thead>
-    <!-- <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr> -->
-  </thead>
-  <tbody>
-    <!-- <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr> -->
-  </tbody>
-</table>
-
-
+        <h3>Productos </h3>
+        <div class="body">
+          <div class="card" style="width: relative; margin-bottom: 20px;">
+          <img src="img/up.jpeg" class="card-img-top img-responsive">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- 3 botones -->
-    <button type="button" class="btn btn-primary">Agendar</button>
-    <button type="button" class="btn btn-success">Cotizar</button>
-    <button type="button" class="btn btn-danger">Cancelar</button>
-     <hr> 
+        
+      
 
     
 
+   </div>
+    <div id="icono">
+     <a href="#top"><img class="img-responsive" src="img/play-button.svg" alt="logo"></a>
+   </div>
 
-
-
-
-  </form>
+  <!--  <div class="popup" onclick="myFunction()">Click me!
   
+</div>
+ -->
+         <span class="popuptext" id="myPopup">Popup text...</span>
+    <br>
+    <br>
+    <!-- 3 botones -->
+    <button type="button" class="btn btn-primary" onclick="captura()">Agendar</button>
+    <button type="button" class="btn btn-success" onclick="popUp()">Cotizar</button>
+    <button type="button" class="btn btn-danger">Cancelar</button>
+
+
+
+
+
+
+  
+
+
     
 </body>
 <!-- jquery -->
-    <script src="js/script.js"></script>
+<script src="js/script.js">
 </script>
-</html>  
+</html> 

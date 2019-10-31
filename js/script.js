@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-<<<<<<< HEAD
+
 	$("#icono").on("mouseover",function(){
 		AnimateRotate(-90);
 	}).on("mouseout",function(){
@@ -8,16 +8,14 @@ $(document).ready(function(){
 	})
 
 	icono();
-=======
->>>>>>> 04a1f9b86d42c247caa818c0fbc9462c7609831f
-
+    popUp();
 
 })
 
 function captura(){
 	$.ajax({
 		type: 'GET',
-<<<<<<< HEAD
+
 		url: '../process.asp',
 		dataType: 'json'
  
@@ -26,9 +24,9 @@ function captura(){
 
 		console.log("Hecho");
 		console.log( data );
-=======
-		url: 'process.asp',
-		data: {accion: 'captura'}
+
+		url: 'process.asp'
+		data: {accion : 'captura'}
  
 	})
 	.done(function( data ){
@@ -37,13 +35,13 @@ function captura(){
 		table=data.split("-/-/-")
 		$("#firstTable").append(table)	
 		
->>>>>>> 04a1f9b86d42c247caa818c0fbc9462c7609831f
+
 
 	})
 	.fail(function(){
 		console.log("fallo");
 	});
-<<<<<<< HEAD
+
 }
 
 function icono(){
@@ -68,9 +66,9 @@ function icono(){
          console.log('Down');
          $("#icono").fadeIn();
      }else {
-         //scroll up
-         console.log('Up');
-         $("#icono").fadeOut();
+        //scroll up
+        console.log('Up');
+        $("#icono").fadeOut();
      }
 
 
@@ -97,6 +95,10 @@ function AnimateRotate(angle) {
             });
         }
     });
-=======
->>>>>>> 04a1f9b86d42c247caa818c0fbc9462c7609831f
+
+
+}
+function popUp() {
+    var popup = $("#myPopup")
+    .toggle("show");
 }

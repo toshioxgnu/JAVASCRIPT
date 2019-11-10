@@ -15,28 +15,22 @@ $(document).ready(function(){
 function captura(){
 	$.ajax({
 		type: 'GET',
-
-		url: '../process.asp',
-		dataType: 'json'
+		url: '../process.asp'
  
 	})
 	.done(function( data ){
 
 		console.log("Hecho");
 		console.log( data );
-
-		url: 'process.asp'
-		data: {accion : 'captura'}
+		url: '../process.asp'
+		data: {accion : 'captura', 
+                fname: $("#txtUser").val(), 
+                passwd: $("#pass").val()}
  
 	})
 	.done(function( data ){
 		console.log("Hecho");
-		console.log( data );
-		table=data.split("-/-/-")
-		$("#firstTable").append(table)	
-		
-
-
+		console.log( data );	
 	})
 	.fail(function(){
 		console.log("fallo");
